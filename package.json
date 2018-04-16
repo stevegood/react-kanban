@@ -15,8 +15,8 @@
   },
   "author": "Markus Englund <markus.s.englund@gmail.com>",
   "license": "MIT",
-  "engines" : {
-    "node" : "8.11.x"
+  "engines": {
+    "node": "8.11.x"
   },
   "dependencies": {
     "axios": "^0.18.0",
