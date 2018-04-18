@@ -5,15 +5,14 @@
   "main": "dist/server.js",
   "scripts": {
     "build:dev": "webpack-dashboard -- webpack --watch --mode development",
-    "build:prod": "./node_modules/.bin/webpack --mode production",
+    "build": "./node_modules/.bin/webpack --mode production",
     "serve:dev": "nodemon dist/server.js",
-    "serve:prod": "NODE_ENV=production node dist/server.js",
+    "serve": "NODE_ENV=production node dist/server.js",
     "analyze-bundle": "webpack -p --profile --json > stats.json && webpack-bundle-analyzer stats.json dist/public -s gzip",
     "lint": "eslint --ext .js,.jsx src/",
     "format": "prettier --write '**/*.{js,jsx,css,scss,json,md}'",
-    "postinstall": "npm run build:prod",
-    "build": "npm run serve:prod",
-    "start": "npm run build"
+    "postinstall": "npm run build",
+    "start": "npm run serve"
   },
   "author": "Markus Englund <markus.s.englund@gmail.com>",
   "license": "MIT",
